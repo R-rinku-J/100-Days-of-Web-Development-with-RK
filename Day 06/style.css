@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+  }
+
+  #gameCanvas {
+    border: 2px solid black;
+    background-color: white;
+  }
+
+  #score {
+    margin-top: 20px; /* Adds space between the canvas and the score */
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
