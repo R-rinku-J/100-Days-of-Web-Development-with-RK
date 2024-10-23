@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.container {
+  width: 400px;
+  height: 100px;
+  padding: 2em;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid rgb(5, 5, 10);
+}
+
+.output {
+  margin-top: 2em;
+}
+
+/* JavaScript */
+.todo {
+  border-left: 4px solid rgb(34, 161, 187);
+  color: rgb(75, 75, 75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  font-size: 1em;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.delete {
+  color: rgb(226, 43, 153);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.message-container {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+  background-color: white;
+  padding: 20px;
+  transform: translateX(0);
+  visibility: hidden;
+  transition: transform 1s ease;
+}
+
+.success {
+  transform: translateX(100px);
+  visibility: visible;
+  background-color: rgb(46, 146, 223);
+  color: white;
+  border-radius: 5px;
+}
+
+.error {
+  transform: translateX(100px);
+  visibility: visible;
+  background-color: rgb(223, 71, 162);
+  color: #fff;
+  border-radius: 5px;
+}
